@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Avalonia.Utilities;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace AvaloniaApplication1.ViewModels
 {
