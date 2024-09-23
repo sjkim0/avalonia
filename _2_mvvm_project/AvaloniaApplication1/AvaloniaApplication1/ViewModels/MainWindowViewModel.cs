@@ -1,6 +1,7 @@
 ﻿using AvaloniaApplication1.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Collections.ObjectModel;
 
 namespace AvaloniaApplication1.ViewModels
 {
@@ -13,6 +14,9 @@ namespace AvaloniaApplication1.ViewModels
 
         [ObservableProperty]
         private string name;
+
+        [ObservableProperty]
+        private ObservableCollection<string> items;
 
         [RelayCommand]
         private void buttonClicked()
@@ -27,6 +31,7 @@ namespace AvaloniaApplication1.ViewModels
             _model = new MyModel();
 
             Name = "ViewModelName";
+            Items = new ObservableCollection<string>{"item 0", "item 1"};
         }
     }
 }
