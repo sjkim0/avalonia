@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:local="clr-namespace:AvaloniaApplication1;assembly=AvaloniaApplication1"
         x:Class="AvaloniaApplication1.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
@@ -19,6 +20,7 @@
     <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     <Button Width="100" Command="{Binding buttonClickedCommand}"></Button>
     <TextBlock Text="{Binding Items[0]}"></TextBlock>
+    <local:UserControl1 MyText="{Binding Items[2]}"></local:UserControl1>
   </StackPanel>
 
 </Window>
