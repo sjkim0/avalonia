@@ -20,7 +20,7 @@
     <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     <Button Width="100" Command="{Binding buttonClickedCommand}"></Button>
     <TextBlock Text="{Binding Items[0]}"></TextBlock>
-    <local:UserControl1 MyText="{Binding Items[2]}"></local:UserControl1>
+    <local:UserControl1 Value="1234"></local:UserControl1>
   </StackPanel>
 
 </Window>
